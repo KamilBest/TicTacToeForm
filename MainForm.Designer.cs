@@ -47,6 +47,7 @@
             this.displayDraws = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.ticTacToe = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -245,17 +246,28 @@
             // 
             this.ticTacToe.AutoSize = true;
             this.ticTacToe.Font = new System.Drawing.Font("Lato", 14.25F);
-            this.ticTacToe.Location = new System.Drawing.Point(66, 9);
+            this.ticTacToe.Location = new System.Drawing.Point(65, 9);
             this.ticTacToe.Name = "ticTacToe";
             this.ticTacToe.Size = new System.Drawing.Size(100, 23);
             this.ticTacToe.TabIndex = 20;
             this.ticTacToe.Text = "Tic Tac Toe";
             // 
-            // Form1
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
+            this.label3.Location = new System.Drawing.Point(69, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 12);
+            this.label3.TabIndex = 21;
+            this.label3.Text = " by: Kamil Best";
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 271);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.ticTacToe);
             this.Controls.Add(this.displayDraws);
             this.Controls.Add(this.label4);
@@ -275,7 +287,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Tic Tac Toe ";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -303,6 +315,7 @@
         private System.Windows.Forms.Label displayDraws;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label ticTacToe;
+        private System.Windows.Forms.Label label3;
     }
 }
 

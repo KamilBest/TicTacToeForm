@@ -261,6 +261,16 @@ namespace TicTacToeForm
             button7.Text = "";
             button8.Text = "";
             button9.Text = "";
+            button1.BackColor = Color.White;
+            button2.BackColor = Color.White;
+            button3.BackColor = Color.White;
+            button4.BackColor = Color.White;
+            button5.BackColor = Color.White;
+            button6.BackColor = Color.White;
+            button7.BackColor = Color.White;
+            button8.BackColor = Color.White;
+            button9.BackColor = Color.White;
+
             displayCurrentPlayerTurn();
             displayScore();
             displayDraws.Text = drawCounter.ToString();
@@ -303,9 +313,28 @@ namespace TicTacToeForm
         {
             for (int i = 0; i < GameBoard.BOARD_SIZE; i++)
             {
-                if (checkRowCol(gameBoard.Board[i, 0].getFieldState(), gameBoard.Board[i, 1].getFieldState(), gameBoard.Board[i, 2].getFieldState()))
+                if (checkCells(gameBoard.Board[i, 0].getFieldState(), gameBoard.Board[i, 1].getFieldState(), gameBoard.Board[i, 2].getFieldState()))
                 {
+                    if (i == 0)
+                    {
+                        button1.BackColor = Color.Green;
+                        button2.BackColor = Color.Green;
+                        button3.BackColor = Color.Green;
 
+                    }
+                    else if (i == 1)
+                    {
+                        button4.BackColor = Color.Green;
+                        button5.BackColor = Color.Green;
+                        button6.BackColor = Color.Green;
+
+                    }
+                    else
+                    {
+                        button7.BackColor = Color.Green;
+                        button8.BackColor = Color.Green;
+                        button9.BackColor = Color.Green;
+                    }
                     return true;
                 }
             }
@@ -319,8 +348,30 @@ namespace TicTacToeForm
         {
             for (int i = 0; i < GameBoard.BOARD_SIZE; i++)
             {
-                if (checkRowCol(gameBoard.Board[0, i].getFieldState(), gameBoard.Board[1, i].getFieldState(), gameBoard.Board[2, i].getFieldState()))
+                if (checkCells(gameBoard.Board[0, i].getFieldState(), gameBoard.Board[1, i].getFieldState(), gameBoard.Board[2, i].getFieldState()))
+                {
+                    if (i == 0)
+                    {
+                        button1.BackColor = Color.Green;
+                        button4.BackColor = Color.Green;
+                        button7.BackColor = Color.Green;
+
+                    }
+                    else if (i == 1)
+                    {
+                        button2.BackColor = Color.Green;
+                        button5.BackColor = Color.Green;
+                        button8.BackColor = Color.Green;
+
+                    }
+                    else
+                    {
+                        button3.BackColor = Color.Green;
+                        button6.BackColor = Color.Green;
+                        button9.BackColor = Color.Green;
+                    }
                     return true;
+                }
             }
             return false;
         }
@@ -331,13 +382,27 @@ namespace TicTacToeForm
         */
         private bool checkDiagonalsForWin()
         {
-            return ((checkRowCol(gameBoard.Board[0, 0].getFieldState(), gameBoard.Board[1, 1].getFieldState(), gameBoard.Board[2, 2].getFieldState())) || (checkRowCol(gameBoard.Board[0, 2].getFieldState(), gameBoard.Board[1, 1].getFieldState(), gameBoard.Board[2, 0].getFieldState())));
+            if (checkCells(gameBoard.Board[0, 0].getFieldState(), gameBoard.Board[1, 1].getFieldState(), gameBoard.Board[2, 2].getFieldState()))
+            {
+                button1.BackColor = Color.Green;
+                button5.BackColor = Color.Green;
+                button9.BackColor = Color.Green;
+                return true;
+            }
+            else if (checkCells(gameBoard.Board[0, 2].getFieldState(), gameBoard.Board[1, 1].getFieldState(), gameBoard.Board[2, 0].getFieldState()))
+            {
+                button3.BackColor = Color.Green;
+                button5.BackColor = Color.Green;
+                button7.BackColor = Color.Green;
+                return true;
+            }
+            return false;
         }
 
         /**
         Check to see if all three values are the same (and not empty) to indicate a win.
         */
-        private bool checkRowCol(FIELD cell1, FIELD cell2, FIELD cell3)
+        private bool checkCells(FIELD cell1, FIELD cell2, FIELD cell3)
         {
             return (cell1 != FIELD.FLD_EMPTY) && (cell1 == cell2) && (cell2 == cell3);
         }
