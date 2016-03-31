@@ -48,12 +48,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.ticTacToe = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(30, 49);
+            this.button1.Location = new System.Drawing.Point(24, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 0;
@@ -63,7 +64,7 @@
             // button2
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(86, 49);
+            this.button2.Location = new System.Drawing.Point(80, 49);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 50);
             this.button2.TabIndex = 1;
@@ -73,7 +74,7 @@
             // button3
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Location = new System.Drawing.Point(142, 49);
+            this.button3.Location = new System.Drawing.Point(136, 49);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 50);
             this.button3.TabIndex = 2;
@@ -83,7 +84,7 @@
             // button6
             // 
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Location = new System.Drawing.Point(142, 105);
+            this.button6.Location = new System.Drawing.Point(136, 105);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(50, 50);
             this.button6.TabIndex = 5;
@@ -93,7 +94,7 @@
             // button5
             // 
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Location = new System.Drawing.Point(86, 105);
+            this.button5.Location = new System.Drawing.Point(80, 105);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(50, 50);
             this.button5.TabIndex = 4;
@@ -103,7 +104,7 @@
             // button4
             // 
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Location = new System.Drawing.Point(30, 105);
+            this.button4.Location = new System.Drawing.Point(24, 105);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(50, 50);
             this.button4.TabIndex = 3;
@@ -113,7 +114,7 @@
             // button9
             // 
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Location = new System.Drawing.Point(142, 161);
+            this.button9.Location = new System.Drawing.Point(136, 161);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(50, 50);
             this.button9.TabIndex = 8;
@@ -123,7 +124,7 @@
             // button8
             // 
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Location = new System.Drawing.Point(86, 161);
+            this.button8.Location = new System.Drawing.Point(80, 161);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(50, 50);
             this.button8.TabIndex = 7;
@@ -133,7 +134,7 @@
             // button7
             // 
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Location = new System.Drawing.Point(30, 161);
+            this.button7.Location = new System.Drawing.Point(24, 161);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(50, 50);
             this.button7.TabIndex = 6;
@@ -145,7 +146,7 @@
             this.label1.BackColor = System.Drawing.Color.SkyBlue;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label1.Location = new System.Drawing.Point(218, 49);
+            this.label1.Location = new System.Drawing.Point(214, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 24);
@@ -157,7 +158,8 @@
             // 
             this.displayTurn.BackColor = System.Drawing.Color.White;
             this.displayTurn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.displayTurn.Location = new System.Drawing.Point(218, 73);
+            this.displayTurn.Cursor = System.Windows.Forms.Cursors.Help;
+            this.displayTurn.Location = new System.Drawing.Point(214, 73);
             this.displayTurn.Name = "displayTurn";
             this.displayTurn.Size = new System.Drawing.Size(102, 26);
             this.displayTurn.TabIndex = 10;
@@ -168,7 +170,7 @@
             this.label2.BackColor = System.Drawing.Color.SkyBlue;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(218, 105);
+            this.label2.Location = new System.Drawing.Point(214, 105);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 24);
@@ -180,7 +182,8 @@
             // 
             this.player1Score.BackColor = System.Drawing.Color.White;
             this.player1Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.player1Score.Location = new System.Drawing.Point(218, 129);
+            this.player1Score.Cursor = System.Windows.Forms.Cursors.Help;
+            this.player1Score.Location = new System.Drawing.Point(214, 129);
             this.player1Score.Name = "player1Score";
             this.player1Score.Size = new System.Drawing.Size(45, 26);
             this.player1Score.TabIndex = 13;
@@ -190,7 +193,8 @@
             // 
             this.player2Score.BackColor = System.Drawing.Color.White;
             this.player2Score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.player2Score.Location = new System.Drawing.Point(275, 129);
+            this.player2Score.Cursor = System.Windows.Forms.Cursors.Help;
+            this.player2Score.Location = new System.Drawing.Point(271, 129);
             this.player2Score.Name = "player2Score";
             this.player2Score.Size = new System.Drawing.Size(45, 26);
             this.player2Score.TabIndex = 15;
@@ -201,7 +205,7 @@
             this.label5.BackColor = System.Drawing.Color.SkyBlue;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label5.Location = new System.Drawing.Point(275, 105);
+            this.label5.Location = new System.Drawing.Point(271, 105);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 24);
@@ -211,7 +215,8 @@
             // 
             // resetGame
             // 
-            this.resetGame.Location = new System.Drawing.Point(218, 237);
+            this.resetGame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.resetGame.Location = new System.Drawing.Point(214, 223);
             this.resetGame.Name = "resetGame";
             this.resetGame.Size = new System.Drawing.Size(102, 22);
             this.resetGame.TabIndex = 17;
@@ -223,7 +228,8 @@
             // 
             this.displayDraws.BackColor = System.Drawing.Color.White;
             this.displayDraws.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.displayDraws.Location = new System.Drawing.Point(218, 185);
+            this.displayDraws.Cursor = System.Windows.Forms.Cursors.Help;
+            this.displayDraws.Location = new System.Drawing.Point(214, 185);
             this.displayDraws.Name = "displayDraws";
             this.displayDraws.Size = new System.Drawing.Size(102, 26);
             this.displayDraws.TabIndex = 19;
@@ -234,7 +240,7 @@
             this.label4.BackColor = System.Drawing.Color.SkyBlue;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(218, 161);
+            this.label4.Location = new System.Drawing.Point(214, 161);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 24);
@@ -246,27 +252,42 @@
             // 
             this.ticTacToe.AutoSize = true;
             this.ticTacToe.Font = new System.Drawing.Font("Lato", 14.25F);
-            this.ticTacToe.Location = new System.Drawing.Point(65, 9);
+            this.ticTacToe.Location = new System.Drawing.Point(63, 9);
             this.ticTacToe.Name = "ticTacToe";
             this.ticTacToe.Size = new System.Drawing.Size(100, 23);
             this.ticTacToe.TabIndex = 20;
             this.ticTacToe.Text = "Tic Tac Toe";
+            this.ticTacToe.Click += new System.EventHandler(this.ticTacToe_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F);
-            this.label3.Location = new System.Drawing.Point(69, 32);
+            this.label3.Location = new System.Drawing.Point(12, 265);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 12);
+            this.label3.Size = new System.Drawing.Size(101, 12);
             this.label3.TabIndex = 21;
-            this.label3.Text = " by: Kamil Best";
+            this.label3.Text = " Created by: Kamil Best";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // exit
+            // 
+            this.exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit.Location = new System.Drawing.Point(214, 251);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(102, 23);
+            this.exit.TabIndex = 22;
+            this.exit.Text = "Menu";
+            this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.menu_Click);
             // 
             // MainForm
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 271);
+            this.ClientSize = new System.Drawing.Size(342, 286);
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ticTacToe);
             this.Controls.Add(this.displayDraws);
@@ -287,7 +308,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe ";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -316,6 +339,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label ticTacToe;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button exit;
     }
 }
 

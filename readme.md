@@ -4,6 +4,8 @@ but with my object oriented Tic tac toe code (https://github.com/KamilBest/TicTa
 
 ### Screenshoots:
 
+![alt tag](http://imgur.com/ZRfrdmo.jpg)
+
 ![alt tag](http://i.imgur.com/GXJQyi1.jpg)
 
 ![alt tag](http://i.imgur.com/pLC2fTe.jpg)

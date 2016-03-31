@@ -407,6 +407,26 @@ namespace TicTacToeForm
             return (cell1 != FIELD.FLD_EMPTY) && (cell1 == cell2) && (cell2 == cell3);
         }
 
+        private void menu_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do You want back to Menu? Current game will be closed.", "Back to Menu", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Menu menu = new TicTacToeForm.Menu();
+                menu.Show();
+                this.Close();             
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ticTacToe_Click(object sender, EventArgs e)
+        {
+
+        }
+
         /**
         Check to see if all three conditions are true to indicate win.
         */
