@@ -10,18 +10,33 @@ namespace TicTacToeForm
     {
         FIELD fieldState;
 
+        /**
+        Constructor, set cell empty on create.
+        */
         public Cell()
         {
             fieldState = FIELD.FLD_EMPTY;
         }
+        
+        /**
+        Get field (cell) state 
+        */
         public FIELD getFieldState()
         {
             return fieldState;
         }
+
+        /**
+        Set Cell empty on reset
+        */
         public void setEmpty()
         {
             fieldState = FIELD.FLD_EMPTY;
         }
+
+        /**
+        Check whether cell is empty
+        */
         public bool isEmpty()
         {
             if (fieldState!= FIELD.FLD_EMPTY)
@@ -29,6 +44,9 @@ namespace TicTacToeForm
             return true;
         }
 
+        /**
+        Mark cell with current player sign.
+        */
         public char markField(Player player)
         {
             if(isEmpty())
@@ -39,9 +57,6 @@ namespace TicTacToeForm
                     fieldState = FIELD.FLD_O;
             }
             return (char)fieldState.GetHashCode();
-
-
         }
-
     }
 }

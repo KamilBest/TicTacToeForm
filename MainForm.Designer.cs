@@ -1,6 +1,6 @@
 ﻿namespace TicTacToeForm
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -46,6 +46,7 @@
             this.resetGame = new System.Windows.Forms.Button();
             this.displayDraws = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.ticTacToe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -182,6 +183,7 @@
             this.player1Score.Name = "player1Score";
             this.player1Score.Size = new System.Drawing.Size(45, 26);
             this.player1Score.TabIndex = 13;
+            this.player1Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // player2Score
             // 
@@ -191,6 +193,7 @@
             this.player2Score.Name = "player2Score";
             this.player2Score.Size = new System.Drawing.Size(45, 26);
             this.player2Score.TabIndex = 15;
+            this.player2Score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -207,7 +210,7 @@
             // 
             // resetGame
             // 
-            this.resetGame.Location = new System.Drawing.Point(218, 245);
+            this.resetGame.Location = new System.Drawing.Point(218, 237);
             this.resetGame.Name = "resetGame";
             this.resetGame.Size = new System.Drawing.Size(102, 22);
             this.resetGame.TabIndex = 17;
@@ -219,30 +222,41 @@
             // 
             this.displayDraws.BackColor = System.Drawing.Color.White;
             this.displayDraws.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.displayDraws.Location = new System.Drawing.Point(247, 185);
+            this.displayDraws.Location = new System.Drawing.Point(218, 185);
             this.displayDraws.Name = "displayDraws";
-            this.displayDraws.Size = new System.Drawing.Size(45, 26);
+            this.displayDraws.Size = new System.Drawing.Size(102, 26);
             this.displayDraws.TabIndex = 19;
+            this.displayDraws.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.SkyBlue;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label4.Location = new System.Drawing.Point(247, 161);
+            this.label4.Location = new System.Drawing.Point(218, 161);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 24);
+            this.label4.Size = new System.Drawing.Size(102, 24);
             this.label4.TabIndex = 18;
             this.label4.Text = "Draws";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // ticTacToe
+            // 
+            this.ticTacToe.AutoSize = true;
+            this.ticTacToe.Font = new System.Drawing.Font("Lato", 14.25F);
+            this.ticTacToe.Location = new System.Drawing.Point(66, 9);
+            this.ticTacToe.Name = "ticTacToe";
+            this.ticTacToe.Size = new System.Drawing.Size(100, 23);
+            this.ticTacToe.TabIndex = 20;
+            this.ticTacToe.Text = "Tic Tac Toe";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 292);
+            this.ClientSize = new System.Drawing.Size(342, 271);
+            this.Controls.Add(this.ticTacToe);
             this.Controls.Add(this.displayDraws);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.resetGame);
@@ -263,8 +277,8 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Tic Tac Toe ";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -288,6 +302,7 @@
         private System.Windows.Forms.Button resetGame;
         private System.Windows.Forms.Label displayDraws;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label ticTacToe;
     }
 }
 

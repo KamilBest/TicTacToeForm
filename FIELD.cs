@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TicTacToeForm
 {
+    /**
+     Contains possible states of single cell.
+    */
     public enum FIELD
     {
         FLD_EMPTY = ' ',

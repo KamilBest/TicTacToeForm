@@ -9,7 +9,8 @@ namespace TicTacToeForm
     public class Player
     {
         char sign;
-        int wins=0, losses=0;
+        int wins=0;
+
         /**
         constructor
         */
@@ -17,22 +18,23 @@ namespace TicTacToeForm
         {
             sign = playerSign;
         }
+        
+        /**
+        Add win to player
+        */
         public void win()
         {
             wins++;
         }
+
+        /** 
+        get wins
+        */
         public int getWins()
         {
             return wins;
         }
-        public int getLosses()
-        {
-            return losses;
-        }
-        public void lose()
-        {
-            losses++;
-        }
+
         /**
            get player sign
         */
@@ -40,7 +42,13 @@ namespace TicTacToeForm
         {
             return sign;
         }
-  
 
+        /**
+        reset wins
+        */
+        public void resetWins()
+        {
+            wins = 0;
+        }
     }
 }
